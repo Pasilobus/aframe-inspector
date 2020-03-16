@@ -238,10 +238,9 @@ Inspector.prototype = {
     }
   },
   
-  /* Add Events */
-   sendevt: function(event, attr) {
-     console.log('received');
-    Events.emit(event, attr);
+ 
+   sendevt: function() {
+     this.close();
   },
 
   /**
