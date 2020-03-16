@@ -18421,9 +18421,9 @@ Inspector.prototype = {
   },
 
   /**
-   * Toggle the editor
+   * Send Events
    */
-  sendEvent: function toggle(evt, attr) {
+  sendEvent: function sendEvent(evt, attr) {
     Events.emit(evt, attr);
   },
 
