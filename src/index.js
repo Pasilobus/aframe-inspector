@@ -237,6 +237,11 @@ Inspector.prototype = {
       this.open();
     }
   },
+  
+  /* Add Events */
+   emitEvent: function(event, attr) {
+    Events.emit(event, attr);
+  },
 
   /**
    * Open the editor UI
