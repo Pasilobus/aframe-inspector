@@ -240,6 +240,7 @@ Inspector.prototype = {
   
   /* Add Events */
    emitEvent: function(event, attr) {
+     console.log('received');
     Events.emit(event, attr);
   },
 
