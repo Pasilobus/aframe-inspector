@@ -18420,8 +18420,8 @@ Inspector.prototype = {
     }
   },
 
-  sendevt: function sendevt() {
-    this.close();
+  sendevt: function sendevt(evt, attr) {
+    Events.emit(evt, attr);
   },
 
   /**

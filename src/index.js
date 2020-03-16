@@ -237,10 +237,10 @@ Inspector.prototype = {
       this.open();
     }
   },
-  
- 
-   sendevt: function() {
-     this.close();
+
+
+   sendevt: function(evt, attr) {
+    Events.emit(evt, attr);
   },
 
   /**
