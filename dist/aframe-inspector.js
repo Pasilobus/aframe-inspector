@@ -18423,8 +18423,9 @@ Inspector.prototype = {
   /**
    * Send Events
    */
-  sendEvent: function sendEvent(evt, attr) {
-    Events.emit(evt, attr);
+  sendEvent: function sendEvent() {
+        this.close();
+    //Events.emit(evt, attr);
   },
 
   /**
